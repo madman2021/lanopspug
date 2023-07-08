@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  csgopug:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./demo:/demo
+    network_mode: "host"
